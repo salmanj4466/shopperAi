@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Font Awsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!-- Tour -->
+      <link rel="stylesheet" href="https://unpkg.com/@sjmc11/tourguidejs/dist/css/tour.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>ShopperAI</title>
+   </head>
+   <body>
+      <!-- Header -->
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand py-0 d-lg-none" href="index.html">
+            <img src="assets/images/logo.png" alt="logo"> 
+            </a>
+            <span class="d-lg-none d-flex align-items-center">
+            <a href="javascript:void(0)" class="mr-md-3" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+            <a href="javascript:void(0)" class="mr-md-3" id="close"><i class="fa fa-times"></i></a>
+            </span>
+            <ul class="navbar-nav  align-items-center">
+               <li class="nav-item dropdown pr-3">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img class="mr-1" src="assets/images/avatar.png" alt="avatar">
+                  Hey Ziva <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Profile</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Logout</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="javascript:void(0)">
+                     <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control" type="text" placeholder="Search anything" aria-label="Search">
+                        <i class="icon-search"></i>
+                     </form>
+                  </a>
+               </li>
+            </ul>
+            <ul class="navbar-nav ml-auto align-items-center">
+               <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link">
+                  <img src="assets/images/icon/settings.svg" alt="settings">
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link pr-0">
+                  <img src="assets/images/icon/logout.svg" alt="logout">
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <!-- Nav Bottom -->
+         <nav class="navbar navbar-expand-lg navbar-light nav-bottom d-none d-lg-flex">
+            <ul class="navbar-nav  align-items-center">
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Tuna <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Starkist <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  4 Pack Oil <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img class="mr-2" src="assets/images/icon/calendar.svg" alt="calendar"> Calendar <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img class="mr-2" src="assets/images/icon/distribution.svg" alt="distribution"> Comparison <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <div id="wrapper">
+         <!-- Sidebar Menu -->
+         <aside id="sidebar-wrapper" class="scrollbar">
+            <div class="sidebar-nav">
+               <a class="navbar-brand d-none d-lg-block text-center m-auto" href="index.html">
+               <img src="assets/images/logo.png" alt="logo"> 
+               </a>
+               <ul>
+                  <li>
+                     <a href="index.html">
+                     <img src="assets/images/icon/store.svg" alt="store"> 
+                     Overview</a>
+                  </li>
+                  <li>
+                     <a href="the-shopper.html">
+                     <img src="assets/images/icon/group.svg" alt="group"> 
+                     The Shopper</a>
+                  </li>
+                  <li>
+                     <a href="decision-tree.html">
+                     <img src="assets/images/icon/irganigram.svg" alt="irganigram"> 
+                     Decision Tree</a>
+                  </li>
+                  <li class="active">
+                     <a href="competitors.html">
+                     <img src="assets/images/icon/ticket.svg" alt="ticket"> 
+                     Competitors</a>
+                     <div class="circle" id="tourTrigger" onclick="startTour()"></div>
+                  </li>
+               </ul>
+            </div>
+         </aside>
+         <!-- Main -->
+         <main id="content-wrapper">
+            <section class="dashboard">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="card" data-tg-order="1" data-tg-tour='see what your store looks like on desktop and mobile before youu go live'>
+                           <div class="card-body">
+                              <h6>Lead Alternatives</h6>
+                              <canvas id="lead_alternative_bar_chart" height="15vh" width="60vw"></canvas>
+                           </div>
+                        </div>
+                        <div class="card" data-tg-order="2" data-tg-tour='see what your store looks like on desktop and mobile before youu go live'>
+                           <div class="card-body">
+                              <div class="d-flex flex-wrap justify-content-between mb-3">
+                                 <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                       <button class="nav-link active" id="pills-Conversion-tab" data-toggle="pill" data-target="#pills-Conversion" type="button" role="tab" aria-controls="pills-Conversion" aria-selected="true">Conversion Rate</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                       <button class="nav-link" id="pills-purchasing-tab" data-toggle="pill" data-target="#pills-purchasing" type="button" role="tab" aria-controls="pills-purchasing" aria-selected="false">Interact Without Purchasing</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                       <button class="nav-link" id="pills-competitors-tab" data-toggle="pill" data-target="#pills-competitors" type="button" role="tab" aria-controls="pills-competitors" aria-selected="false">Interact Purchaed Competitors</button>
+                                    </li>
+                                 </ul>
+                                 <div class="nav-item dropdown sort-field">
+                                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                    <img class="mr-1" width="14" src="assets/images/icon/calendar.svg" alt="calendar"> Sort by <i class="fa fa-angle-down ml-2"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                       <a class="dropdown-item" href="javascript:void(0)">Sep</a>
+                                       <a class="dropdown-item" href="javascript:void(0)">Oct</a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-content" id="pills-tabContent">
+                                 <div class="tab-pane fade show active" id="pills-Conversion" role="tabpanel" aria-labelledby="pills-Conversion-tab">
+                                    <canvas id="converstion_interact_line_area_chart" height="15vh" width="60vw"></canvas>
+                                 </div>
+                                 <div class="tab-pane fade" id="pills-purchasing" role="tabpanel" aria-labelledby="pills-purchasing-tab">...</div>
+                                 <div class="tab-pane fade" id="pills-competitors" role="tabpanel" aria-labelledby="pills-competitors-tab">...</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <div class="card-body px-0">
+                              <h6 class="ml-3 pl-1">TouchTrends</h6>
+                              <div class="table-reponsive">
+                                 <table class="table mb-0">
+                                    <thead>
+                                       <tr>
+                                          <th>Brand</th>
+                                          <th>Product</th>
+                                          <th>Interaction Share</th>
+                                          <th>Conversion Rate</th>
+                                          <th>IFR</th>
+                                          <th>Avg Interaction Duration</th>
+                                          <th>Lead Alternative</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" src="assets/images/starkist.png" alt="starkist">
+                                          </td>
+                                          <td>Tuna Starkist product xxx</td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>00:14:02</strong> <i class="icon-caret-up"></i></td>
+                                          <td>Tuna Starkist product xxx</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" src="assets/images/rio.png" alt="rio">
+                                          </td>
+                                          <td>Tuna Starkist product xxx</td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>00:14:02</strong> <i class="icon-caret-up"></i></td>
+                                          <td>Tuna Starkist product xxx</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" width="70" src="assets/images/filtuna.png" alt="filtuna">
+                                          </td>
+                                          <td>Tuna Starkist product xxx</td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>00:14:02</strong> <i class="icon-caret-up"></i></td>
+                                          <td>Tuna Starkist product xxx</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" src="assets/images/starkist.png" alt="starkist">
+                                          </td>
+                                          <td>Tuna Starkist product xxx</td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>00:14:02</strong> <i class="icon-caret-up"></i></td>
+                                          <td>Tuna Starkist product xxx</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" width="70" src="assets/images/filtuna.png" alt="filtuna">
+                                          </td>
+                                          <td>Tuna Starkist product xxx</td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>00:14:02</strong> <i class="icon-caret-up"></i></td>
+                                          <td>Tuna Starkist product xxx</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" width="70" src="assets/images/filtuna.png" alt="filtuna">
+                                          </td>
+                                          <td>Tuna Starkist product xxx</td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>00:14:02</strong> <i class="icon-caret-up"></i></td>
+                                          <td>Tuna Starkist product xxx</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" src="assets/images/starkist.png" alt="starkist">
+                                          </td>
+                                          <td>Tuna Starkist product xxx</td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>00:14:02</strong> <i class="icon-caret-up"></i></td>
+                                          <td>Tuna Starkist product xxx</td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" src="assets/images/rio.png" alt="rio">
+                                          </td>
+                                          <td>Tuna Starkist product xxx</td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>39%</strong> <i class="icon-caret-up"></i></td>
+                                          <td><strong>00:14:02</strong> <i class="icon-caret-up"></i></td>
+                                          <td>Tuna Starkist product xxx</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+      </div>
+      <!-- Text -->
+      <h1 class="text-visible">Visible only in Desktop</h1>
+      <!-- jQuery first then Bootstrap JS -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <!-- Tour demo -->
+      <script src="https://unpkg.com/@sjmc11/tourguidejs/dist/tour.js"></script>
+      <!-- Chart JS -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+      <script src="assets/js/data.js"></script>
+      <script>
+         $(document).ready(function(){
+          $("#close").hide();
+          $("#close").click(function(){
+           $("#wrapper").toggleClass("toggled");
+           $("#sidebar-toggle").show();
+           $("#close").hide();
+         });
+          $("#sidebar-toggle").click(function(){
+            $("#wrapper").toggleClass('toggled');
+            $("#sidebar-toggle").hide();
+            $("#close").show();
+         });
+         });
+      </script>
+      <script type="text/javascript">
+         const tg = new tourguide.TourGuideClient({
+           keyboardControls: true,
+           rememberStep: true
+         })
+         
+         
+         tg.onFinish(()=>{
+           console.warn('Tour finished')
+         })
+         
+         tg.onAfterStepChange(()=>{
+           console.warn('Tour step changed')
+         })
+         
+         
+           tg.onAfterStepChange(()=>{
+                 
+                 if (tg.activeStep !== 0) {
+                    document.getElementById('tg-dialog-prev-btn').style.visibility = 'visible';
+                 }else{
+                    document.getElementById('tg-dialog-prev-btn').style.visibility = 'hidden';
+                 }
+                console.warn('Tour step changed')
+              })
+              
+         
+              function startTour(){
+                tg.start()
+         
+                if (tg.activeStep == 0) {
+                    document.getElementById('tg-dialog-prev-btn').style.visibility = 'hidden';
+                }
+              }
+         /**
+          * Pulse animation if tour not completed
+          */
+         const tourTrigger = document.getElementById('tourTrigger');
+         if(!tg.isFinished() && tourTrigger) tourTrigger.classList.add('pulse-animated')
+         
+         function toggleDocsMethod(e){
+           // Update buttons
+           const toggles = document.querySelectorAll( '.doctoggle' );
+           toggles.forEach((elem)=>{
+             elem.className = "doctoggle trans border rounded-md py-2 px-6 text-xs mr-3 font-medium dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-indigo-500 hover:dark:text-indigo-500";
+           })
+           e.className = "doctoggle trans border rounded-md py-2 px-6 mr-3 text-xs font-medium dark:bg-white dark:text-zinc-800 text-white bg-zinc-600"
+         
+           // Update elements
+           var docBlocks = document.querySelectorAll(".doc-method");
+           docBlocks.forEach((elem)=>{
+             if(elem.dataset.docs === e.dataset.docs){
+               elem.style.display = "block";
+             } else {
+               elem.style.display = "none";
+             }
+           })
+         }
+         
+         function copyText(e) {
+           if(!e.dataset.copytext) return
+           const textToCopy = e.dataset.copytext;
+           const tempInput = document.createElement("input");
+           tempInput.value = textToCopy;
+           tempInput.type = "text";
+           document.body.appendChild(tempInput);
+           tempInput.select();
+           document.execCommand("Copy");
+           document.body.removeChild(tempInput);
+           const confirmMsg = document.getElementById('copyConfirm')
+           if(confirmMsg) {
+             confirmMsg.classList.add('fadeOut')
+             setTimeout(()=>{
+               confirmMsg.classList.remove('fadeOut')
+             }, 1000)
+           }
+         }
+         
+      </script>
+      <script>
+         // Lead Alternatives
+         
+         var lead_alternative_bar_ctx = document.getElementById('lead_alternative_bar_chart').getContext('2d');
+         var lead_alternative_bar_chart = new Chart(lead_alternative_bar_ctx, {
+             type: 'bar',
+             data: data_lead_alternative_bar_chart,
+             options: {
+                 scales: {
+                     xAxes: [{
+                         barPercentage: 0.9,
+                         categoryPercentage: 0.4,
+                          gridLines: {
+                          color: "rgba(0, 0, 0, 0)",
+                      }   
+                     }],
+                     yAxes: [{
+                         ticks: { min: 0 , max: 100},
+                          gridLines: {
+                          color: "rgba(0, 0, 0, 0)",
+                      }   
+                     }]
+                 },
+                    legend: {
+                     display: false
+                 }
+             }
+         });
+           
+      </script>
+      <!-- Conversion Rate -->
+      <script>
+         var converstion_interact_line_area_chart_ctx = document.getElementById('converstion_interact_line_area_chart').getContext('2d');
+         var converstion_interact_line_area_chart = new Chart(converstion_interact_line_area_chart_ctx, {
+         type: 'line',
+         data: data_converstion_interact_line_area_chart,
+         options: {
+           bezierCurve : true,
+           scales: {
+            xAxes: [{
+                    gridLines: {
+                    color: "rgba(0, 0, 0, 0)",
+                }   
+               }],
+               yAxes: [{
+                   ticks: {
+                       min: 0,
+                       max: 100,
+                   },
+                      gridLines: {
+                    color: "rgba(0, 0, 0, 0)",
+                }   
+               }]
+           },
+              legend: {
+               display: false,
+         
+           }
+         }
+         });
+      </script>
+   </body>
+</html>

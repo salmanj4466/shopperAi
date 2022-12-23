@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Font Awsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!-- Tour -->
+      <link rel="stylesheet" href="https://unpkg.com/@sjmc11/tourguidejs/dist/css/tour.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>ShopperAI</title>
+   </head>
+   <body>
+      <!-- Header -->
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand py-0 d-lg-none" href="index.html">
+            <img src="assets/images/logo.png" alt="logo"> 
+            </a>
+            <span class="d-lg-none d-flex align-items-center">
+            <a href="javascript:void(0)" class="mr-md-3" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+            <a href="javascript:void(0)" class="mr-md-3" id="close"><i class="fa fa-times"></i></a>
+            </span>
+            <ul class="navbar-nav  align-items-center">
+               <li class="nav-item dropdown pr-3">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img class="mr-1" src="assets/images/avatar.png" alt="avatar">
+                  Hey Ziva <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Profile</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Logout</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="javascript:void(0)">
+                     <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control" type="text" placeholder="Search anything" aria-label="Search">
+                        <i class="icon-search"></i>
+                     </form>
+                  </a>
+               </li>
+            </ul>
+            <ul class="navbar-nav ml-auto align-items-center">
+               <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link">
+                  <img src="assets/images/icon/settings.svg" alt="settings">
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link pr-0">
+                  <img src="assets/images/icon/logout.svg" alt="logout">
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <!-- Nav Bottom -->
+         <nav class="navbar navbar-expand-lg navbar-light nav-bottom d-none d-lg-flex">
+            <ul class="navbar-nav  align-items-center">
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Tuna <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Starkist <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  4 Pack Oil <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img class="mr-2" src="assets/images/icon/calendar.svg" alt="calendar"> Calendar <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img class="mr-2" src="assets/images/icon/distribution.svg" alt="distribution"> Comparison <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <div id="wrapper">
+         <!-- Sidebar Menu -->
+         <aside id="sidebar-wrapper" class="scrollbar">
+            <div class="sidebar-nav">
+               <a class="navbar-brand d-none d-lg-block text-center m-auto" href="index.html">
+               <img src="assets/images/logo.png" alt="logo"> 
+               </a>
+               <ul>
+                  <li>
+                     <a href="index.html">
+                     <img src="assets/images/icon/store.svg" alt="store"> 
+                     Overview</a>
+                  </li>
+                  <li>
+                     <a href="the-shopper.html">
+                     <img src="assets/images/icon/group.svg" alt="group"> 
+                     The Shopper</a>
+                  </li>
+                  <li class="active">
+                     <a href="decision-tree.html">
+                     <img src="assets/images/icon/irganigram.svg" alt="irganigram"> 
+                     Decision Tree</a>
+                     <div class="circle" id="tourTrigger" onclick="startTour()"></div>
+                  </li>
+                  <li>
+                     <a href="competitors.html">
+                     <img src="assets/images/icon/ticket.svg" alt="ticket"> 
+                     Competitors</a>
+                     <div class="circle d-none" id="competitorTreeTrigger"></div>
+                  </li>
+               </ul>
+            </div>
+         </aside>
+         <!-- Main -->
+         <main id="content-wrapper">
+            <section class="dashboard">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="card decision-tree" data-tg-order="1" data-tg-tour='see what your store looks like on desktop and mobile before youu go live'>
+                           <div class="card-body pb-5">
+                              <h6>Interaction- Decision Making Tree</h6>
+                              <ul class="step">
+                                 <li>Step 1</li>
+                                 <li>Step 2</li>
+                                 <li>Step 3</li>
+                                 <li>Step 4</li>
+                              </ul>
+                              <hr />
+                              <div class="row">
+                                 <div class="col-md-11">
+                                    <div class="row justify-content-between">
+                                       <div class="col-md-2">
+                                          <div class="card step1">
+                                             <div class="card-body">
+                                                <h3>65%</h3>
+                                                <p>Interst in the category</p>
+                                             </div>
+                                          </div>
+                                          <img class="line-1" src="assets/images/decision-tree/1.png" alt="line">
+                                          <img class="line-2" src="assets/images/decision-tree/2.png" alt="line">
+                                          <img class="line-3" src="assets/images/decision-tree/3.png" alt="line">
+                                          <img class="line-4" src="assets/images/decision-tree/4.png" alt="line">
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="card">
+                                             <div class="card-body">
+                                                <h3>5%</h3>
+                                                <p class="d-flex justify-content-between">Touch Product <img src="assets/images/icon/clock.svg" alt="clock"></p>
+                                             </div>
+                                          </div>
+                                          <div class="card bg-primary">
+                                             <div class="card-body">
+                                                <h3>25%</h3>
+                                                <p>Touch Brand</p>
+                                             </div>
+                                          </div>
+                                          <div class="card bg-primary">
+                                             <div class="card-body">
+                                                <h3>30%</h3>
+                                                <p>Touch Competiton</p>
+                                             </div>
+                                          </div>
+                                          <div class="card bg-primary">
+                                             <div class="card-body">
+                                                <h3>40%</h3>
+                                                <p>Walk Away</p>
+                                             </div>
+                                          </div>
+                                          <img class="line-5" src="assets/images/decision-tree/5.png" alt="line">
+                                          <img class="line-6" src="assets/images/decision-tree/6.png" alt="line">
+                                       </div>
+                                       <div class="col-md-2 step3">
+                                          <div class="card bg-danger">
+                                             <div class="card-body">
+                                                <h3>45%</h3>
+                                                <p class="d-flex justify-content-between">Abandon Product <img src="assets/images/icon/clock.svg" alt="clock"></p>
+                                             </div>
+                                          </div>
+                                          <div class="card bg-success">
+                                             <div class="card-body">
+                                                <h3>35%</h3>
+                                                <p class="d-flex justify-content-between">Abandon Product <img src="assets/images/icon/clock.svg" alt="clock"></p>
+                                             </div>
+                                          </div>
+                                          <img class="line-7" src="assets/images/decision-tree/7.png" alt="line">
+                                          <img class="line-8" src="assets/images/decision-tree/8.png" alt="line">
+                                          <img class="line-9" src="assets/images/decision-tree/9.png" alt="line">
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="card">
+                                             <div class="card-body">
+                                                <h3 class="d-flex justify-content-between">55%  <i class="fa fa-plus"></i></h3>
+                                                <p class="d-flex justify-content-between">Touch Starkist <img src="assets/images/icon/clock.svg" alt="clock"></p>
+                                             </div>
+                                          </div>
+                                          <div class="card">
+                                             <div class="card-body">
+                                                <h3 class="d-flex justify-content-between">45%  <i class="fa fa-plus"></i></h3>
+                                                <p class="d-flex justify-content-between">Touch Competiton <img src="assets/images/icon/clock.svg" alt="clock"></p>
+                                             </div>
+                                          </div>
+                                          <div class="card bg-primary step4">
+                                             <div class="card-body">
+                                                <h3>40%</h3>
+                                                <p>Walk Away</p>
+                                             </div>
+                                          </div>
+                                          <div class="card average-time">
+                                             <div class="card-body">
+                                                <p>Avarge time</p>
+                                                <h3>00:07:19</h3>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-11 sideber-left">
+                                    <div class="card tocuh-card">
+                                       <div class="card-body">
+                                          <h6>Touch Competiton</h6>
+                                          <ul class="list-group list-group-flush">
+                                             <li class="list-group-item">
+                                                <p>30% Product 1</p>
+                                                <span class="badge badge-success">45% Buy </span>
+                                                <span class="badge badge-danger">55% Abandon </span>
+                                             </li>
+                                             <li class="list-group-item">
+                                                <p>50% Product 2</p>
+                                                <span class="badge badge-success">45% Buy </span>
+                                                <span class="badge badge-danger">55% Abandon </span>  
+                                             </li>
+                                             <li class="list-group-item">
+                                                <p>23% Product 3</p>
+                                                <span class="badge badge-success">45% Buy </span>
+                                                <span class="badge badge-danger">55% Abandon </span>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+      </div>
+      <!-- Text -->
+      <h1 class="text-visible">Visible only in Desktop</h1>
+      <!-- jQuery first then Bootstrap JS -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <!-- Tour demo -->
+      <script src="https://unpkg.com/@sjmc11/tourguidejs/dist/tour.js"></script>
+      <!-- Chart JS -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+      <script src="assets/js/data.js"></script>
+      <script>
+         $(document).ready(function(){
+          $("#close").hide();
+          $("#close").click(function(){
+           $("#wrapper").toggleClass("toggled");
+           $("#sidebar-toggle").show();
+           $("#close").hide();
+         });
+          $("#sidebar-toggle").click(function(){
+            $("#wrapper").toggleClass('toggled');
+            $("#sidebar-toggle").hide();
+            $("#close").show();
+         });
+         });
+      </script>
+      <script type="text/javascript">
+         const tg = new tourguide.TourGuideClient({
+           keyboardControls: true,
+           rememberStep: true
+         })
+         
+         
+         tg.onFinish(()=>{
+           console.warn('Tour finished')
+         })
+         
+         tg.onAfterStepChange(()=>{
+           console.warn('Tour step changed')
+         })
+         
+         
+           tg.onAfterStepChange(()=>{
+                 
+                 if (tg.activeStep !== 0) {
+                    document.getElementById('tg-dialog-prev-btn').style.visibility = 'visible';
+                 }else{
+                    document.getElementById('tg-dialog-prev-btn').style.visibility = 'hidden';
+                 }
+                console.warn('Tour step changed')
+              })
+              
+         
+              function startTour(){
+                tg.start()
+         
+                if (tg.activeStep == 0) {
+                    document.getElementById('tg-dialog-prev-btn').style.visibility = 'hidden';
+                }
+              }
+         
+                 tg.onFinish(()=>{
+                window.location.replace("competitors.html");
+                console.warn('Tour finished')
+              })
+         
+         /**
+          * Pulse animation if tour not completed
+          */
+         const tourTrigger = document.getElementById('tourTrigger');
+         if(!tg.isFinished() && tourTrigger) tourTrigger.classList.add('pulse-animated')
+         
+         function toggleDocsMethod(e){
+           // Update buttons
+           const toggles = document.querySelectorAll( '.doctoggle' );
+           toggles.forEach((elem)=>{
+             elem.className = "doctoggle trans border rounded-md py-2 px-6 text-xs mr-3 font-medium dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-indigo-500 hover:dark:text-indigo-500";
+           })
+           e.className = "doctoggle trans border rounded-md py-2 px-6 mr-3 text-xs font-medium dark:bg-white dark:text-zinc-800 text-white bg-zinc-600"
+         
+           // Update elements
+           var docBlocks = document.querySelectorAll(".doc-method");
+           docBlocks.forEach((elem)=>{
+             if(elem.dataset.docs === e.dataset.docs){
+               elem.style.display = "block";
+             } else {
+               elem.style.display = "none";
+             }
+           })
+         }
+         
+         function copyText(e) {
+           if(!e.dataset.copytext) return
+           const textToCopy = e.dataset.copytext;
+           const tempInput = document.createElement("input");
+           tempInput.value = textToCopy;
+           tempInput.type = "text";
+           document.body.appendChild(tempInput);
+           tempInput.select();
+           document.execCommand("Copy");
+           document.body.removeChild(tempInput);
+           const confirmMsg = document.getElementById('copyConfirm')
+           if(confirmMsg) {
+             confirmMsg.classList.add('fadeOut')
+             setTimeout(()=>{
+               confirmMsg.classList.remove('fadeOut')
+             }, 1000)
+           }
+         }
+         
+      </script>
+   </body>
+</html>

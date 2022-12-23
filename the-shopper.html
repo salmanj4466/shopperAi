@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Font Awsome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!-- Tour -->
+      <link rel="stylesheet" href="https://unpkg.com/@sjmc11/tourguidejs/dist/css/tour.min.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <title>ShopperAI</title>
+   </head>
+   <body>
+      <!-- Header -->
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand py-0 d-lg-none" href="index.html">
+            <img src="assets/images/logo.png" alt="logo"> 
+            </a>
+            <span class="d-lg-none d-flex align-items-center">
+            <a href="javascript:void(0)" class="mr-md-3" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+            <a href="javascript:void(0)" class="mr-md-3" id="close"><i class="fa fa-times"></i></a>
+            </span>
+            <ul class="navbar-nav  align-items-center">
+               <li class="nav-item dropdown pr-3">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img class="mr-1" src="assets/images/avatar.png" alt="avatar">
+                  Hey Ziva <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Profile</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Logout</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="javascript:void(0)">
+                     <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control" type="text" placeholder="Search anything" aria-label="Search">
+                        <i class="icon-search"></i>
+                     </form>
+                  </a>
+               </li>
+            </ul>
+            <ul class="navbar-nav ml-auto align-items-center">
+               <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link">
+                  <img src="assets/images/icon/settings.svg" alt="settings">
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a href="javascript:void(0)" class="nav-link pr-0">
+                  <img src="assets/images/icon/logout.svg" alt="logout">
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <!-- Nav Bottom -->
+         <nav class="navbar navbar-expand-lg navbar-light nav-bottom d-none d-lg-flex">
+            <ul class="navbar-nav  align-items-center">
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Tuna <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Starkist <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  4 Pack Oil <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img class="mr-2" src="assets/images/icon/calendar.svg" alt="calendar"> Calendar <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                  <img class="mr-2" src="assets/images/icon/distribution.svg" alt="distribution"> Comparison <i class="fa fa-angle-down"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                     <a class="dropdown-item" href="javascript:void(0)">Link</a>
+                  </div>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <div id="wrapper">
+         <!-- Sidebar Menu -->
+         <aside id="sidebar-wrapper" class="scrollbar">
+            <div class="sidebar-nav">
+               <a class="navbar-brand d-none d-lg-block text-center m-auto" href="index.html">
+               <img src="assets/images/logo.png" alt="logo"> 
+               </a>
+               <ul>
+                  <li>
+                     <a href="index.html">
+                     <img src="assets/images/icon/store.svg" alt="store"> 
+                     Overview</a>
+                  </li>
+                  <li class="active">
+                     <a href="the-shopper.html">
+                     <img src="assets/images/icon/group.svg" alt="group"> 
+                     The Shopper</a>
+                     <div class="circle" id="tourTrigger" onclick="startTour()"></div>
+                  </li>
+                  <li>
+                     <a href="decision-tree.html">
+                     <img src="assets/images/icon/irganigram.svg" alt="irganigram"> 
+                     Decision Tree</a>
+                     <div class="circle d-none" id="decisionTreeTrigger"></div>
+                  </li>
+                  <li>
+                     <a href="competitors.html">
+                     <img src="assets/images/icon/ticket.svg" alt="ticket"> 
+                     Competitors</a>
+                  </li>
+               </ul>
+            </div>
+         </aside>
+         <!-- Main -->
+         <main id="content-wrapper">
+            <section class="dashboard">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-md-8 pr-md-0" >
+                        <div class="row mb-3" data-tg-order="1" data-tg-tour='see what your store looks like on desktop and mobile before youu go live'>
+                           <div class="col-md-8 pr-md-0">
+                              <div class="card h-100">
+                                 <div class="card-body">
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                       <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-all-tab" data-toggle="pill" data-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+                                       </li>
+                                       <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-abandon-tab" data-toggle="pill" data-target="#pills-abandon" type="button" role="tab" aria-controls="pills-abandon" aria-selected="false">Abandon</button>
+                                       </li>
+                                       <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-buyers-tab" data-toggle="pill" data-target="#pills-buyers" type="button" role="tab" aria-controls="pills-buyers" aria-selected="false">Buyers</button>
+                                       </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                       <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                                          <div class="row">
+                                             <div class="col-md-12">
+                                                <h6 class="mb-3">Age Breakdown</h6>
+                                                <ul class="state-block age-break">
+                                                   <li>
+                                                      <span><i class="icon-caret-up"></i> 12% </span>
+                                                      <h5>20%</h5>
+                                                      <p>0-20</p>
+                                                   </li>
+                                                   <li>
+                                                      <span><i class="icon-caret-up"></i> 12% </span>
+                                                      <h5>40%</h5>
+                                                      <p>25-45</p>
+                                                   </li>
+                                                   <li>
+                                                      <span><i class="icon-caret-up"></i> 12% </span>
+                                                      <h5>40%</h5>
+                                                      <p>45+</p>
+                                                   </li>
+                                                </ul>
+                                                <h6 class="mb-3 mt-4">Gender Breakdown</h6>
+                                                <ul class="state-block gender-breakdown mb-0">
+                                                   <li>
+                                                      <span><i class="icon-caret-down"></i> 12% </span>
+                                                      <h5>44%</h5>
+                                                      <p>Female</p>
+                                                   </li>
+                                                   <li>
+                                                      <span><i class="icon-caret-up"></i> 12% </span>
+                                                      <h5>37%</h5>
+                                                      <p>MALE</p>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="tab-pane fade" id="pills-abandon" role="tabpanel" aria-labelledby="pills-abandon-tab">...</div>
+                                       <div class="tab-pane fade" id="pills-buyers" role="tabpanel" aria-labelledby="pills-buyers-tab">...</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="card h-100">
+                                 <div class="card-body">
+                                    <h6>Decision Types</h6>
+                                    <canvas class="mt-5" id="decision_type_doughnut_chart" height="70vh" width="60vw"></canvas>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <div class="card-body">
+                              <div class="row">
+                                 <div class="col-md-12 text-right">
+                                    <form class="form-filter">
+                                       <select class="form-control d-inline-flex w-auto mr-1">
+                                          <option>Year</option>
+                                          <option>2022</option>
+                                          <option>2023</option>
+                                       </select>
+                                       <select class="form-control d-inline-flex w-auto">
+                                          <option>Month</option>
+                                          <option>Jan</option>
+                                          <option>Feb</option>
+                                       </select>
+                                    </form>
+                                 </div>
+                              </div>
+                              <canvas id="decisive_hesitant_line_chart"></canvas>
+                           </div>
+                        </div>
+                        <div class="card">
+                           <div class="card-body px-0">
+                              <div class="row align-items-center mb-3 px-1 mx-1">
+                                 <div class="col-md-6">
+                                    <h6 class="mb-0">Most Popular (Top 5)</h6>
+                                 </div>
+                                 <div class="col-md-6 text-right">
+                                    <form class="form-filter">
+                                       <select class="form-control d-inline-flex mr-1">
+                                          <option>Gender</option>
+                                          <option>Male</option>
+                                          <option>Female</option>
+                                       </select>
+                                       <select class="form-control d-inline-flex w-auto">
+                                          <option>Age</option>
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                       </select>
+                                    </form>
+                                 </div>
+                              </div>
+                              <div class="table-reponsive">
+                                 <table class="table mb-0">
+                                    <thead>
+                                       <tr>
+                                          <th>Brand</th>
+                                          <th>Product</th>
+                                          <th>Decisive Rate</th>
+                                          <th>Interaction Rate</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" src="assets/images/starkist.png" alt="starkist">
+                                          </td>
+                                          <td>Tuna XXX</td>
+                                          <td><strong>32%</strong></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up ml-1"></i></td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" src="assets/images/rio.png" alt="rio">
+                                          </td>
+                                          <td>Tuna XXX</td>
+                                          <td><strong>32%</strong></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up ml-1"></i></td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" width="70" src="assets/images/filtuna.png" alt="filtuna">
+                                          </td>
+                                          <td>Tuna XXX</td>
+                                          <td><strong>32%</strong></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up ml-1"></i></td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" width="70" src="assets/images/filtuna.png" alt="filtuna">
+                                          </td>
+                                          <td>Tuna XXX</td>
+                                          <td><strong>32%</strong></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up ml-1"></i></td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <img class="img-fluid" width="70" src="assets/images/filtuna.png" alt="filtuna">
+                                          </td>
+                                          <td>Tuna XXX</td>
+                                          <td><strong>32%</strong></td>
+                                          <td><strong>1.2%</strong> <i class="icon-caret-up ml-1"></i></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-md-4 pr-md-0">
+                              <div class="card h-100">
+                                 <div class="card-body">
+                                    <h6>Hasitant Shoppers</h6>
+                                    <canvas id="hasitant_shoppers_chart" height="40vh" width="60vw"></canvas>
+                                    <form class="form-filter float-right mt-4">
+                                       <select class="form-control d-inline-flex mr-1">
+                                          <option>Gender</option>
+                                          <option>Male</option>
+                                          <option>Female</option>
+                                       </select>
+                                       <select class="form-control d-inline-flex w-auto">
+                                          <option>Age</option>
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                       </select>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-8">
+                              <div class="card h-100">
+                                 <div class="card-body">
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <ul class="nav nav-pills justify-content-end mb-4" id="pills-tab" role="tablist">
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-visit-all-tab" data-toggle="pill" data-target="#pills-visit-all" type="button" role="tab" aria-controls="pills-visit-all" aria-selected="true">All</button>
+                                             </li>
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-visit-abandon-tab" data-toggle="pill" data-target="#pills-visit-abandon" type="button" role="tab" aria-controls="pills-visit-abandon" aria-selected="false">Abandon</button>
+                                             </li>
+                                             <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-visit-buyers-tab" data-toggle="pill" data-target="#pills-visit-buyers" type="button" role="tab" aria-controls="pills-visit-buyers" aria-selected="false">Buyers</button>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <div class="col-md-7 pr-md-0">
+                                          <div class="tab-content" id="pills-tabContent">
+                                             <div class="tab-pane fade show active" id="pills-visit-all" role="tabpanel" aria-labelledby="pills-visit-all-tab">
+                                                <canvas id="hesitant_bar_chart" height="45vh" width="60vw"></canvas>
+                                             </div>
+                                             <div class="tab-pane fade" id="pills-visit-abandon" role="tabpanel" aria-labelledby="pills-visit-abandon-tab">...</div>
+                                             <div class="tab-pane fade" id="pills-visit-buyers" role="tabpanel" aria-labelledby="pills-visit-buyers-tab">...</div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-5">
+                                          <ul class="state-block gender-breakdown mb-0">
+                                             <li style="background-image: url('assets/images/stopwatch.png');">
+                                                <span><i class="icon-caret-up"></i> 12% </span>
+                                                <h5>00:32:15</h5>
+                                                <p>Avg Interction Duration</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-4 pr-md-0">
+                              <div class="card h-100">
+                                 <div class="card-body">
+                                    <h6>Decisive Shoppers</h6>
+                                    <canvas id="decisive_shoppers_chart" height="40vh" width="60vw"></canvas>
+                                    <form class="form-filter float-right mt-4">
+                                       <select class="form-control d-inline-flex mr-1">
+                                          <option>Gender</option>
+                                          <option>Male</option>
+                                          <option>Female</option>
+                                       </select>
+                                       <select class="form-control d-inline-flex w-auto">
+                                          <option>Age</option>
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                       </select>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-8">
+                              <div class="card h-100" data-tg-order="1" data-tg-tour='see what your store looks like on desktop and mobile before youu go live'>
+                                 <div class="card-body">
+                                    <ul class="nav nav-pills justify-content-end mb-4" id="pills-tab" role="tablist">
+                                       <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-age-all-tab" data-toggle="pill" data-target="#pills-age-all" type="button" role="tab" aria-controls="pills-age-all" aria-selected="true">All</button>
+                                       </li>
+                                       <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-age-abandon-tab" data-toggle="pill" data-target="#pills-age-abandon" type="button" role="tab" aria-controls="pills-age-abandon" aria-selected="false">Abandon</button>
+                                       </li>
+                                       <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-age-buyers-tab" data-toggle="pill" data-target="#pills-age-buyers" type="button" role="tab" aria-controls="pills-age-buyers" aria-selected="false">Buyers</button>
+                                       </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                       <div class="tab-pane fade show active" id="pills-age-all" role="tabpanel" aria-labelledby="pills-age-all-tab">
+                                          <canvas id="age_bar_chart1"></canvas>
+                                       </div>
+                                       <div class="tab-pane fade" id="pills-age-abandon" role="tabpanel" aria-labelledby="pills-age-abandon-tab">...</div>
+                                       <div class="tab-pane fade" id="pills-age-buyers" role="tabpanel" aria-labelledby="pills-age-buyers-tab">...</div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 sideber-left">
+                        <div class="card h-100">
+                           <div class="card-body">
+                              <h6>Insights</h6>
+                              <ul class="list-group list-group-flush">
+                                 <li class="list-group-item">
+                                    <img src="assets/images/checkmark.png" alt="checkmark">
+                                    <h5>You Better Than The Category</h5>
+                                    <p>Excellent Job! Your brand's IFR is increasing while the category's IFR is declining.</p>
+                                    <span class="badge badge-success">Brand IFR  <span class="ml-2"><i class="icon-caret-up"></i> 12% </span> </span>
+                                    <span class="badge badge-danger">Category IFR <span class="ml-2"><i class="icon-caret-down"></i> 12% </span></span>
+                                 </li>
+                                 <li class="list-group-item">
+                                    <img src="assets/images/piechart.png" alt="piechart">
+                                    <h5>Male Trend</h5>
+                                    <p>A significant increase among male customers in the selected period</p>
+                                    <span class="badge badge-success">Male Shoppers <span class="ml-2"><i class="icon-caret-up"></i> 12% </span></span>
+                                 </li>
+                                 <li class="list-group-item">
+                                    <img src="assets/images/crown.png" alt="crown">  
+                                    <h5>Product Streak!</h5>
+                                    <p>In the past 14 days, StarKist performed better than others in its category</p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </main>
+      </div>
+      <!-- Text -->
+      <h1 class="text-visible">Visible only in Desktop</h1>
+      <!-- jQuery first then Bootstrap JS -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <!-- Tour demo -->
+      <script src="https://unpkg.com/@sjmc11/tourguidejs/dist/tour.js"></script>
+      <!-- Chart JS -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+      <script src="assets/js/data.js"></script>
+      <script>
+         $(document).ready(function(){
+          $("#close").hide();
+          $("#close").click(function(){
+           $("#wrapper").toggleClass("toggled");
+           $("#sidebar-toggle").show();
+           $("#close").hide();
+         });
+          $("#sidebar-toggle").click(function(){
+            $("#wrapper").toggleClass('toggled');
+            $("#sidebar-toggle").hide();
+            $("#close").show();
+         });
+         });
+      </script>
+      <script type="text/javascript">
+         const tg = new tourguide.TourGuideClient({
+           keyboardControls: true,
+           rememberStep: true
+         })
+         
+         
+         tg.onFinish(()=>{
+           console.warn('Tour finished')
+         })
+         
+         tg.onAfterStepChange(()=>{
+           console.warn('Tour step changed')
+         })
+         
+         
+           tg.onAfterStepChange(()=>{
+                 
+                 if (tg.activeStep !== 0) {
+                    document.getElementById('tg-dialog-prev-btn').style.visibility = 'visible';
+                 }else{
+                    document.getElementById('tg-dialog-prev-btn').style.visibility = 'hidden';
+                 }
+                console.warn('Tour step changed')
+              })
+              
+         
+              function startTour(){
+                tg.start()
+         
+                if (tg.activeStep == 0) {
+                    document.getElementById('tg-dialog-prev-btn').style.visibility = 'hidden';
+                }
+              }
+         
+                 tg.onFinish(()=>{
+                window.location.replace("decision-tree.html");
+                console.warn('Tour finished')
+              })
+         /**
+          * Pulse animation if tour not completed
+          */
+         const tourTrigger = document.getElementById('tourTrigger');
+         if(!tg.isFinished() && tourTrigger) tourTrigger.classList.add('pulse-animated')
+         
+         function toggleDocsMethod(e){
+           // Update buttons
+           const toggles = document.querySelectorAll( '.doctoggle' );
+           toggles.forEach((elem)=>{
+             elem.className = "doctoggle trans border rounded-md py-2 px-6 text-xs mr-3 font-medium dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-indigo-500 hover:dark:text-indigo-500";
+           })
+           e.className = "doctoggle trans border rounded-md py-2 px-6 mr-3 text-xs font-medium dark:bg-white dark:text-zinc-800 text-white bg-zinc-600"
+         
+           // Update elements
+           var docBlocks = document.querySelectorAll(".doc-method");
+           docBlocks.forEach((elem)=>{
+             if(elem.dataset.docs === e.dataset.docs){
+               elem.style.display = "block";
+             } else {
+               elem.style.display = "none";
+             }
+           })
+         }
+         
+         function copyText(e) {
+           if(!e.dataset.copytext) return
+           const textToCopy = e.dataset.copytext;
+           const tempInput = document.createElement("input");
+           tempInput.value = textToCopy;
+           tempInput.type = "text";
+           document.body.appendChild(tempInput);
+           tempInput.select();
+           document.execCommand("Copy");
+           document.body.removeChild(tempInput);
+           const confirmMsg = document.getElementById('copyConfirm')
+           if(confirmMsg) {
+             confirmMsg.classList.add('fadeOut')
+             setTimeout(()=>{
+               confirmMsg.classList.remove('fadeOut')
+             }, 1000)
+           }
+         }
+         
+      </script>
+      <!-- Decision Type -->
+      <script>
+         var decision_type_doughnut_chart_ctx = document.getElementById('decision_type_doughnut_chart').getContext('2d');
+         var decision_type_doughnut_chart = new Chart(decision_type_doughnut_chart_ctx, {
+             type: 'doughnut',
+             data: data_decision_type_doughnut_chart,
+             options: {
+               legend: {
+                     position: 'bottom'
+                 }
+             }
+         });
+           
+      </script>
+      <!-- Decisive Shoppers -->
+      <script>
+         var decisive_hesitant_line_chart_ctx = document.getElementById('decisive_hesitant_line_chart').getContext('2d');
+         var decisive_hesitant_line_chart = new Chart(decisive_hesitant_line_chart_ctx, {
+             type: 'line',
+             data: data_decisive_hesitant_line_chart,
+             options: {
+                 bezierCurve : true,
+                 scales: {
+                     xAxes: [{
+                            gridLines: {
+                         color: "rgba(0, 0, 0, 0)",
+                     }
+                     }],
+                     yAxes: [{
+                         ticks: {
+                             min: 0,
+                             max: 100,
+                         },
+                           gridLines: {
+                          color: "rgba(0, 0, 0, 0)",
+                      }   
+                     }]
+                 }
+             }
+         });
+           
+      </script>
+      <!-- Hasitant Shoppers -->
+      <script>
+         var decision_type_doughnut_chart_ctx = document.getElementById('hasitant_shoppers_chart').getContext('2d');
+         var decision_type_doughnut_chart = new Chart(decision_type_doughnut_chart_ctx, {
+             type: 'doughnut',
+             data: data_hasitant_shoppers_chart,
+             options: {}
+         });
+      </script>
+      <!-- Avg visit duration -->
+      <script>
+         var ctx_hesitant_bar = document.getElementById('hesitant_bar_chart').getContext('2d');
+         var hesitant_bar_chart = new Chart(ctx_hesitant_bar, {
+         type: 'bar',
+         data: data_hesitant_bar,
+         options: {
+            scales: {
+                xAxes: [{
+                    stacked: false,
+                    barPercentage: 0.3,
+                    categoryPercentage: 0.4,
+                      gridLines: {
+                     color: "rgba(0, 0, 0, 0)",
+                 }   
+                }],
+                yAxes: [{
+                    stacked: false,
+                    ticks: { min: 0 , max: 120},
+                      gridLines: {
+                     color: "rgba(0, 0, 0, 0)",
+                 }   
+                }]
+            }
+         }
+         });
+      </script>
+      <!-- Decisive Shoppers -->
+      <script>
+         var decision_type_doughnut_chart_ctx = document.getElementById('decisive_shoppers_chart').getContext('2d');
+         var decision_type_doughnut_chart = new Chart(decision_type_doughnut_chart_ctx, {
+             type: 'doughnut',
+             data: data_decisive_shoppers_chart,
+             options: {}
+         });
+         
+      </script>
+      <!-- Age Bar chart -->
+      <script>
+         var ctx_age_bar = document.getElementById('age_bar_chart1').getContext('2d');
+         var age_bar_chart = new Chart(ctx_age_bar, {
+             type: 'bar',
+             data: data_age_bar1,
+             options: {
+                 scales: {
+                     xAxes: [{
+                         stacked: false,
+                         barPercentage: 0.6,
+                         categoryPercentage: 0.4,
+                           gridLines: {
+                          color: "rgba(0, 0, 0, 0)",
+                      }   
+                     }],
+                     yAxes: [{
+                         stacked: false,
+                         ticks: { min: 0 , max: 100},
+                           gridLines: {
+                          color: "rgba(0, 0, 0, 0)",
+                      }   
+                     }]
+                 }
+             }
+         });
+         
+      </script>
+   </body>
+</html>
